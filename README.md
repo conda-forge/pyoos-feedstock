@@ -5,7 +5,7 @@ Home: https://github.com/ioos/pyoos
 
 Package license: GPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A Python library for collecting Met/Ocean observations
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyoos-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyoos-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyoos-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyoos-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyoos-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyoos-feedstock/branch/master)
