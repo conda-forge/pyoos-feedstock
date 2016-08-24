@@ -54,4 +54,7 @@ about:
 
 extra:
     recipe-maintainers:
+        - daf
+        - kwilcox
+        - lukecampbell
         - ocefpaf
