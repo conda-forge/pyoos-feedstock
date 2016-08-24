@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
     name: pyoos
@@ -6,14 +6,12 @@ package:
 
 source:
     fn : pyoos-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/p/pyoos/pyoos-{{ version }}.tar.gz
-    md5: bb79d03a57542bfa838c158765b949a8
+    url: https://github.com/ioos/pyoos/archive/v{{ version }}.tar.gz
+    sha256: d243e1776c88d0982fa70d986a02cbf257c54cebc7f928ba7b86ff2fc315b9b2
 
 build:
     number: 0
-    skip: True  # [py3k]
     script: python setup.py install --single-version-externally-managed --record record.txt
-    preserve_egg_dir: True
 
 requirements:
     build:
@@ -31,7 +29,6 @@ requirements:
 
 test:
     imports:
-        - tests
         - pyoos
         - pyoos.parsers
         - pyoos.collectors.nerrs
@@ -53,7 +50,7 @@ test:
 about:
     home: https://github.com/ioos/pyoos
     license: GPL-3.0
-    summary: A Python library for collecting Met/Ocean observations
+    summary: 'A Python library for collecting Met/Ocean observations.'
 
 extra:
     recipe-maintainers:
