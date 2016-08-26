@@ -1,4 +1,4 @@
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
     name: pyoos
@@ -7,7 +7,7 @@ package:
 source:
     fn : pyoos-{{ version }}.tar.gz
     url: https://github.com/ioos/pyoos/archive/v{{ version }}.tar.gz
-    sha256: c5a50f34e9b9e534d36517e9c16a7999ee3071ffc9f83126248ab4d3bd677ada
+    sha256: 6e6a5772dda6450d2e9968fd5e99d7d48f7aa4b7932f6e775593c736f53c86a3
 
 build:
     number: 0
