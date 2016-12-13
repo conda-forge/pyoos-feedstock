@@ -1,60 +1,62 @@
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
-    name: pyoos
-    version: {{ version }}
+  name: pyoos
+  version: {{ version }}
 
 source:
-    fn : pyoos-{{ version }}.tar.gz
-    url: https://github.com/ioos/pyoos/archive/v{{ version }}.tar.gz
-    sha256: 6e6a5772dda6450d2e9968fd5e99d7d48f7aa4b7932f6e775593c736f53c86a3
+  fn : pyoos-{{ version }}.tar.gz
+  url: https://github.com/ioos/pyoos/archive/v{{ version }}.tar.gz
+  sha256: 168b49101d0eb8d9ef765d21fd6a7aecf627f8ea66b02f9c102c5f2d47d2d6f7
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - paegan
-        - owslib
-        - numpy
-        - requests
-        - fiona
-        - beautifulsoup4
-        - lxml
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - paegan
+    - owslib
+    - numpy
+    - requests
+    - fiona
+    - beautifulsoup4
+    - lxml
 
 test:
-    imports:
-        - pyoos
-        - pyoos.parsers
-        - pyoos.collectors.nerrs
-        - pyoos.collectors
-        - pyoos.collectors.hads
-        - pyoos.collectors.coops
-        - pyoos.collectors.ndbc
-        - pyoos.parsers.ioos
-        - pyoos.collectors.usgs
-        - pyoos.collectors.ioos
-        - pyoos.parsers.ioos.one
-        - pyoos.parsers.wqx
-        - pyoos.utils
-        - pyoos.collectors.awc
-        - pyoos.collectors.wqp
-    requires:
-        - pytest
+  imports:
+    - pyoos
+    - pyoos.parsers
+    - pyoos.collectors.nerrs
+    - pyoos.collectors
+    - pyoos.collectors.hads
+    - pyoos.collectors.coops
+    - pyoos.collectors.ndbc
+    - pyoos.parsers.ioos
+    - pyoos.collectors.usgs
+    - pyoos.collectors.ioos
+    - pyoos.parsers.ioos.one
+    - pyoos.parsers.wqx
+    - pyoos.utils
+    - pyoos.collectors.awc
+    - pyoos.collectors.wqp
+  requires:
+    - pytest
 
 about:
-    home: https://github.com/ioos/pyoos
-    license: GPL-3.0
-    summary: 'A Python library for collecting Met/Ocean observations.'
+  home: https://github.com/ioos/pyoos
+  license: GPL-3.0
+  license_file: LICENSE
+
+  summary: 'A Python library for collecting Met/Ocean observations.'
 
 extra:
-    recipe-maintainers:
-        - daf
-        - kwilcox
-        - lukecampbell
-        - ocefpaf
+  recipe-maintainers:
+    - daf
+    - kwilcox
+    - lukecampbell
+    - ocefpaf
