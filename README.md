@@ -11,6 +11,18 @@ Summary: A Python library for collecting Met/Ocean observations.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyoos-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyoos-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyoos-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyoos-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyoos-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyoos-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyoos/badges/version.svg)](https://anaconda.org/conda-forge/pyoos)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyoos/badges/downloads.svg)](https://anaconda.org/conda-forge/pyoos)
+
 Installing pyoos
 ================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pyoos` available on your platform
 ```
 conda search pyoos --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyoos-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyoos-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyoos-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyoos-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyoos-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyoos-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyoos/badges/version.svg)](https://anaconda.org/conda-forge/pyoos)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyoos/badges/downloads.svg)](https://anaconda.org/conda-forge/pyoos)
 
 
 Updating pyoos-feedstock
