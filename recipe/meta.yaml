@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 
 package:
   name: pyoos
@@ -7,7 +7,7 @@ package:
 source:
   fn : pyoos-{{ version }}.tar.gz
   url: https://github.com/ioos/pyoos/archive/v{{ version }}.tar.gz
-  sha256: 168b49101d0eb8d9ef765d21fd6a7aecf627f8ea66b02f9c102c5f2d47d2d6f7
+  sha256: 75a33c1d0f36e97a9a4da6eba8aedb48636f0753f5c361167155b3afad80c3d6
 
 build:
   number: 0
@@ -51,7 +51,6 @@ about:
   home: https://github.com/ioos/pyoos
   license: GPL-3.0
   license_file: LICENSE
-
   summary: 'A Python library for collecting Met/Ocean observations.'
 
 extra:
