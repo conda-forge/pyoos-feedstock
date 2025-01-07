@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
   run:
-    - python
+    - python >={{ python_min }}
     - paegan
     - owslib
     - numpy
@@ -48,6 +48,7 @@ test:
     - pyoos.collectors.wqp
   requires:
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ioos/pyoos
